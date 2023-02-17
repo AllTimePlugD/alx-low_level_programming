@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: print all single digit numbers
+ *  print all single digit numbers
  *
  * Return: Always 0 (Success)
 */
