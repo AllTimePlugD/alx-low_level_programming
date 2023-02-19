@@ -1,23 +1,24 @@
-#include<stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: print a-z in reverse
- *
  * Return: Always 0 (Success)
-*/
+ */
 
 int main(void)
 {
-	char ch = 'z';
+  int digit = 0;
 
-	while (ch >= 'a')
-	{
-		putchar(ch);
-		--ch;
-	}
-	putchar('\n');
+  while (digit < 10)
+  {
+    putchar(digit + '0');
+    digit++;
+  }
 
-	return (0);
+  putchar('\n');
+
+  return (0);
 }
