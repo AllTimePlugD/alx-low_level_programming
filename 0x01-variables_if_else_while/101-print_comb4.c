@@ -1,43 +1,32 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- * main - program that prints all possible different combinations of
- * three digits
- * Numbers must be separated by ,followed by a space
- * The two digits must be different
- * 012, 120, 102, 021, 201, 210 are considered the same combination
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int i = 48;
-	int j;
-	int k;
-	int cal = 44;
+int i;
 
-	while (i <= 57)
-	{
-		j = i + 1;
-		while (j <= 57)
+for (i = 0; i < 1000 ; i++)
+{
+	if ((i % 10) > ((i / 10) % 10) && (i % 10) != ((i / 10) % 10))
+		if (((i / 10) % 10) > (i / 100) && ((i / 10) % 10) != (i / 100))
 		{
-			k = j + 1;
-			while (k <= 57)
-			{
-				putchar (i);
-				putchar (j);
-				putchar (k);
-				if (i != 55 || j != 56 || k != 57)
-				{
-					putchar (cal);
-					putchar (32);
-				}
-				k += 1;
-			}
-			j += 1;
+			putchar((i / 100) + '0');
+			putchar(((i / 10) % 10) + '0');
+			putchar((i % 10) + '0');
+		if (i < 788)
+		{
+		putchar(',');
+		putchar(' ');
 		}
-		i += 1;
-	}
-	putchar ('\n');
-	return (0);
+		else
+		putchar('\n');
+		}
+}
+return (0);
 }
