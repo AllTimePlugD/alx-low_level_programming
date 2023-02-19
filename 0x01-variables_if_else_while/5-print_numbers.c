@@ -10,14 +10,13 @@
 
 int main(void)
 {
-	int num = 0;
+    int i;
 
-	while (num <= 9)
-	{
-		printf("%i", num);
-		++num;
-	}
-	printf("\n");
+    for (i = 0; i < 10; i++)
+    {
+        putchar(i + '0');
+    }
+    putchar('\n');
 
-	return (0);
+    return 0;
 }
