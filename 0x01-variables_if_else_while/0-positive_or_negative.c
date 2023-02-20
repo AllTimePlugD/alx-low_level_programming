@@ -1,28 +1,28 @@
-#include <stdlib.h>
+include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/*if number is greater than 0 print positive
+ *if the number is less than o print negative , 
+ *if the number is zero then print 0
+ *return : always 0 (success)
+ */
 
-/**
-* main - Entry point
-* Description: Assign a random number to the variable n each time it is executed.
-* Print whether the number stored in the variable n is positive or negative.
-* Return: Always 0 (Success)
-*/
-
+/* betty style doc for function main goes there */
 int main(void)
 {
-        int n;
+	int n;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
-        
-        if (n > 0)
-                printf("%d is positive\n", n);
-        else if (n < 0)
-                printf("%d is negative\n", n);
-        else
-                printf("%d is zero\n", n);
-                
-        return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	if (n>0)
+	 printf("The number is positive %d\n",n);
+	 else
+	 if (n<0)
+	  printf("The number is negative %d\n,n");
+	  else
+	   printf("The number is zero %d\n,n");
+	   
+	return (0);
 }
 
