@@ -17,6 +17,7 @@ _putchar((n % 10) + '0');
 n--;
 }
 else if (n < 0)
+{
 _putchar('-');
 n = (n * -1);
 if (n >= 100)
