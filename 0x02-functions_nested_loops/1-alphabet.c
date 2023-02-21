@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- *print alphabet lowercase void
+ *void print_alphabet lowecase
  * Return: Always 0
  */
 void print_alphabet(void)
