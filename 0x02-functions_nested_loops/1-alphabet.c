@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_alphabet - entry point
  * Description - prints all alphabet, in lowercase, followed by a new line
@@ -7,10 +6,12 @@
  */
 void print_alphabet(void)
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
+char chr;
+char = 'a';
+while (chr <= 'z')
 {
-_putchar(c);
+_putchar(chr);
+chr++;
 }
 _putchar('\n');
 }
