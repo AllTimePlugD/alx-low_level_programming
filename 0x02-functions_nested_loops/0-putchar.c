@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: prints _putchar followed by a new line
- * Return
+ * Return: Always 0
  */
 int main(void)
 {
