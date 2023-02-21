@@ -8,13 +8,14 @@ int main(void)
 {
 int i;
 unsigned int a = 1, b = 2, c;
-printf("%u, %u", a, b);  // print first two numbers
-for (i = 3; i <= 98; i++) {
+printf("%u, %u", a, b);
+for (i = 3; i <= 98; i++) 
+{
 c = a + b;
 printf(", %u", c);
 a = b;
 b = c;
 }
-printf("\n");  // print newline character
+printf("\n");  
 return 0;
 }
