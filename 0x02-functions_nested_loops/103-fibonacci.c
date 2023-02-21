@@ -1,4 +1,7 @@
 #include <stdio.h>
+/**
+* Main - Entry point
+* Finds and prints sum of valued even terms, followed by new line
 int main(void)
 {
 int sum = 0;
