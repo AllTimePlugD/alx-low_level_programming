@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+int main(void)
 {
 int sum = 0;
 int prev = 1;
@@ -16,5 +16,5 @@ curr = curr + prev;
 prev = temp;
 }
 printf("%d\n", sum);
-return 0;
+return (0);
 }
