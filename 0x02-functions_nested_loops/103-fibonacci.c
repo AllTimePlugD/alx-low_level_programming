@@ -2,6 +2,8 @@
 /**
 * Main - Entry point
 * Finds and prints sum of valued even terms, followed by new line
+*Return: Always 0
+*/
 int main(void)
 {
 int sum = 0;
